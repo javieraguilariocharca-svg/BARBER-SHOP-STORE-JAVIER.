@@ -1,0 +1,139 @@
+
+
+[
+    {
+        "id": 1,
+        "nombre": "Máquina de corte profesional",
+        "descripcion": "Máquina eléctrica ideal para cortes precisos y profesionales.",
+        "precio": 350,
+        "categoria": "Máquinas",
+        "stock": 12,
+        "imagen": "img/maquina-corte.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Tijera profesional",
+        "descripcion": "Tijera de acero inoxidable para cortes y acabados.",
+        "precio": 120,
+        "categoria": "Herramientas",
+        "stock": 15,
+        "imagen": "img/tijera-profesional.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Brocha para afeitar",
+        "descripcion": "Brocha suave para distribuir espuma de afeitar.",
+        "precio": 45,
+        "categoria": "Accesorios",
+        "stock": 20,
+        "imagen": "img/brocha-afeitar.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Atomizador profesional",
+        "descripcion": "Pulverizador para humedecer el cabello durante el corte.",
+        "precio": 30,
+        "categoria": "Accesorios",
+        "stock": 18,
+        "imagen": "img/atomizador.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Secadora de cabello",
+        "descripcion": "Secadora para el secado y peinado del cabello.",
+        "precio": 280,
+        "categoria": "Máquinas",
+        "stock": 8,
+        "imagen": "img/secadora.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Juego de peines",
+        "descripcion": "Conjunto de peines para diferentes estilos de corte.",
+        "precio": 65,
+        "categoria": "Herramientas",
+        "stock": 25,
+        "imagen": "img/peines.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Máquina patillera",
+        "descripcion": "Máquina compacta para detalles, contornos y acabados.",
+        "precio": 220,
+        "categoria": "Máquinas",
+        "stock": 10,
+        "imagen": "img/patillera.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Navaja de barbería",
+        "descripcion": "Herramienta profesional para trabajos de precisión.",
+        "precio": 85,
+        "categoria": "Herramientas",
+        "stock": 9,
+        "imagen": "img/navaja.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Capa de barbería",
+        "descripcion": "Capa protectora para el cliente durante el corte.",
+        "precio": 75,
+        "categoria": "Accesorios",
+        "stock": 14,
+        "imagen": "img/capa.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Cepillo para cabello",
+        "descripcion": "Cepillo para limpiar y acomodar el cabello.",
+        "precio": 35,
+        "categoria": "Herramientas",
+        "stock": 16,
+        "imagen": "img/cepillo.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Gel para cabello",
+        "descripcion": "Producto para fijar y dar forma al peinado.",
+        "precio": 40,
+        "categoria": "Cuidado personal",
+        "stock": 22,
+        "imagen": "img/gel.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Cera para cabello",
+        "descripcion": "Cera para definir estilos y controlar el peinado.",
+        "precio": 55,
+        "categoria": "Cuidado personal",
+        "stock": 0,
+        "imagen": "img/cera.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Talco para barbería",
+        "descripcion": "Talco para el acabado y cuidado después del corte.",
+        "precio": 32,
+        "categoria": "Cuidado personal",
+        "stock": 11,
+        "imagen": "img/talco.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Cuchillas de repuesto",
+        "descripcion": "Paquete de cuchillas de repuesto para herramientas compatibles.",
+        "precio": 25,
+        "categoria": "Accesorios",
+        "stock": 0,
+        "imagen": "img/cuchillas.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Kit de barbería",
+        "descripcion": "Conjunto de accesorios básicos para el trabajo de barbería.",
+        "precio": 450,
+        "categoria": "Accesorios",
+        "stock": 5,
+        "imagen": "img/kit-barberia.jpg"
+    }
+]

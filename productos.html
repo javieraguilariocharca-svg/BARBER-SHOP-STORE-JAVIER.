@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | BARBER SHOP STORE</title>
+
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <span> DISPONIBILIDAD</span>
+            <span> COMPRA SEGURA</span>
+            <span> ATENCION AL CLIENTE</span>
+    </div>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✂</span>
+
+            <span>
+                BARBER SHOP <strong>STORE</strong>
+                <small>Estilo, calidad y profesionalismo</small>
+            </span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html" class="activo">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="carrito.html" id="contador-carrito">Mi compra (0)</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner-catalogo">
+
+            <div>
+                <span class="etiqueta">CALIDAD PARA PROFESIONALES</span>
+
+                <h1>
+                    NUESTROS <strong>PRODUCTOS</strong>
+                </h1>
+
+                <p>
+                    Encuentra máquinas, herramientas y accesorios
+                    para llevar tu barbería al siguiente nivel.
+                </p>
+
+                <a href="#catalogo" class="btn-dorado">
+                    EXPLORAR CATÁLOGO →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios">
+
+            <div>
+                <span>✦</span>
+                <p>
+                    <strong>Calidad profesional</strong>
+                    <small>Productos seleccionados</small>
+                </p>
+            </div>
+
+            <div>
+                <span></span>
+                <p>
+                    <strong>Envíos rápidos</strong>
+                    <small>A todo el país</small>
+                </p>
+            </div>
+
+            <div>
+                <span></span>
+                <p>
+                    <strong>Compra segura</strong>
+                    <small>Atención confiable</small>
+                </p>
+            </div>
+
+            <div>
+                <span></span>
+                <p>
+                    <strong>Atención personalizada</strong>
+                    <small>Estamos para ayudarte</small>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- CATÁLOGO DE PRODUCTOS -->
+        <section class="catalogo" id="catalogo">
+
+            <div class="titulo-seccion">
+                <span>ENCUENTRA LO QUE BUSCAS</span>
+
+                <h2>
+                    Nuestro <strong>Catálogo</strong>
+                </h2>
+
+                <p>
+                    Explora nuestras herramientas y accesorios para barbería.
+                </p>
+            </div>
+
+            <!-- RESUMEN -->
+            <div class="resumen-catalogo">
+                <span>
+                    <strong id="total-productos">0</strong>
+                    productos encontrados
+                </span>
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+
+                <div class="campo busqueda">
+                    <label for="buscar-producto">
+                        Buscar producto
+                    </label>
+
+                    <input
+                        type="search"
+                        id="buscar-producto"
+                        placeholder="Escribe el nombre del producto..."
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="filtro-categoria">
+                        Categoría
+                    </label>
+
+                    <select id="filtro-categoria">
+                        <option value="">Todas</option>
+                        <option value="Máquinas">Máquinas</option>
+                        <option value="Herramientas">Herramientas</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Cuidado personal">Cuidado personal</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="ordenar-precio">
+                        Ordenar precio
+                    </label>
+
+                    <select id="ordenar-precio">
+                        <option value="original">Predeterminado</option>
+                        <option value="menor">Menor a mayor</option>
+                        <option value="mayor">Mayor a menor</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="filtro-stock">
+                        Disponibilidad
+                    </label>
+
+                    <select id="filtro-stock">
+                        <option value="todos">Todos</option>
+                        <option value="disponible">Disponibles</option>
+                        <option value="agotado">Agotados</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- MENSAJE DE RESULTADOS -->
+            <p class="mensaje-resultados" id="mensaje-resultados">
+                Cargando productos...
+            </p>
+
+            <!-- PRODUCTOS CARGADOS CON JAVASCRIPT -->
+            <div class="productos-grid" id="lista-productos"></div>
+
+        </section>
+
+        <!-- PROMOCIÓN -->
+        <section class="promocion">
+
+            <div>
+                <span>BARBER SHOP STORE</span>
+
+                <h2>
+                    Equipa tu barbería con calidad y estilo.
+                </h2>
+
+                <p>
+                    Todo lo que necesitas para tu trabajo diario.
+                </p>
+            </div>
+
+            <a href="contacto.html" class="btn-dorado">
+                CONTÁCTANOS →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h2>
+                    BARBER SHOP <strong>STORE</strong>
+                </h2>
+
+                <p>Estilo, calidad y profesionalismo.</p>
+                <p>Todo para tu barbería en un solo lugar.</p>
+            </div>
+
+            <div>
+                <h3>Enlaces rápidos</h3>
+
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+
+            <div>
+                <h3>Atención al cliente</h3>
+
+                <a href="contacto.html">Contáctanos</a>
+                <a href="faq.html">Preguntas frecuentes</a>
+                <a href="carrito.html">Mi carrito</a>
+            </div>
+
+            <div>
+    <h3>Síguenos</h3>
+
+    <div class="redes-sociales">
+
+        <a href="https://www.facebook.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visitar Facebook">
+
+            <img src="https://cdn.simpleicons.org/facebook/1877F2"
+                 alt="Facebook">
+
+        </a>
+
+        <a href="https://www.instagram.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visitar Instagram">
+
+            <img src="https://cdn.simpleicons.org/instagram/E4405F"
+                 alt="Instagram">
+
+        </a>
+
+    </div>
+
+    <p>Gracias por visitar nuestra tienda.</p>
+</div>
+
+        </div>
+
+        <div class="footer-final">
+            © 2026 BARBER SHOP STORE. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- VENTANA MODAL DE PRODUCTOS -->
+    <div class="modal" id="modal-producto">
+
+        <div class="modal-caja">
+
+            <button
+                class="cerrar-modal"
+                id="cerrar-modal"
+                type="button"
+                aria-label="Cerrar ventana"
+            >
+                ×
+            </button>
+
+            <div id="detalle-producto"></div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="app/productos.js"></script>
+    <script src="app/contador-carrito.js"></script>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a
+        href="https://wa.me/591XXXXXXXXX"
+        class="whatsapp-flotante"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Contáctanos por WhatsApp"
+    >
+        WhatsApp
+    </a>
+
+</body>
+</html>

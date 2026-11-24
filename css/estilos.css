@@ -1,0 +1,809 @@
+
+/* =========================================
+   BARBER SHOP STORE - ESTILOS PRINCIPALES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #171717;
+}
+
+/* BARRA SUPERIOR */
+
+.inicio-topbar {
+    background: #050505;
+    color: white;
+    border-bottom: 1px solid #c99b2c;
+    padding: 9px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 11px;
+}
+
+/* ENCABEZADO */
+
+.encabezado-fijo {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.inicio-header {
+    background: #080808;
+    padding: 17px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c99b2c;
+}
+
+.inicio-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inicio-logo strong,
+.inicio-logo-icono {
+    color: #d6a52c;
+}
+
+.inicio-logo-icono {
+    font-size: 35px;
+}
+
+.inicio-logo small {
+    display: block;
+    color: #bbb;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.inicio-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.inicio-menu a:hover,
+.inicio-menu a.seleccionado {
+    color: #111;
+    background: #d6a52c;
+    padding: 9px 13px;
+    border-radius: 20px;
+}
+
+/* BANNER PRINCIPAL */
+
+.inicio-hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 65px 9%;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.48)),
+        url("../img/banner.png")
+        center/cover no-repeat;
+    border-bottom: 2px solid #c99b2c;
+}
+
+.inicio-hero-contenido {
+    max-width: 650px;
+}
+
+.inicio-etiqueta,
+.inicio-titulo > span {
+    color: #d6a52c;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.inicio-hero h1 {
+    color: white;
+    font-size: clamp(35px, 5vw, 62px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.inicio-hero h1 span {
+    color: #d6a52c;
+}
+
+.inicio-hero p {
+    color: #eee;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.inicio-boton {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #f3d06b, #c99519);
+    color: #080808;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.inicio-boton:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.inicio-confianza {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 28px;
+    color: #e7c45c;
+    font-size: 12px;
+}
+
+/* BENEFICIOS */
+
+.inicio-beneficios {
+    background: #080808;
+    color: white;
+    padding: 25px 6%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-bottom: 2px solid #c99b2c;
+}
+
+.inicio-beneficio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.inicio-beneficio > span {
+    font-size: 27px;
+    color: #d6a52c;
+}
+
+.inicio-beneficio h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.inicio-beneficio p {
+    color: #bbb;
+    font-size: 11px;
+}
+
+/* TÍTULOS */
+
+.inicio-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.inicio-titulo h2 {
+    color: #151515;
+    font-size: clamp(25px, 4vw, 35px);
+    margin: 10px 0;
+}
+
+.inicio-titulo h2 strong {
+    color: #c99519;
+}
+
+.inicio-titulo p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* CATEGORÍAS */
+
+.inicio-categorias {
+    padding: 65px 7%;
+    background: #fff;
+}
+
+.inicio-categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.inicio-categoria {
+    background: #101010;
+    border: 1px solid #c99b2c;
+    border-radius: 9px;
+    min-height: 190px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.inicio-categoria:hover {
+    transform: translateY(-7px);
+    background: #211b0e;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+.inicio-categoria > span {
+    color: #d6a52c;
+    font-size: 35px;
+}
+
+.inicio-categoria h3 {
+    color: #e2b83f;
+    font-size: 17px;
+    margin: 15px 0 8px;
+}
+
+.inicio-categoria p {
+    color: #ccc;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.inicio-categoria b {
+    color: #e5bd52;
+    font-size: 12px;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.inicio-destacados {
+    background: #f0f0f0;
+    padding: 65px 7%;
+}
+
+.inicio-productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 22px;
+}
+
+/* TARJETAS */
+
+.inicio-productos-grid .tarjeta-producto {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-productos-grid .tarjeta-producto:hover {
+    transform: translateY(-6px);
+    border-color: #c99b2c;
+    box-shadow: 0 9px 22px rgba(0,0,0,.12);
+}
+
+/* IMÁGENES */
+
+.inicio-productos-grid .imagen-producto {
+    width: 100%;
+    height: 190px;
+    flex-shrink: 0;
+    background: #151515;
+    overflow: hidden;
+}
+
+.inicio-productos-grid .imagen-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFORMACIÓN DEL PRODUCTO */
+
+.inicio-productos-grid .informacion-producto {
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.inicio-productos-grid .nombre-producto {
+    color: #171717;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.inicio-productos-grid .precio-producto {
+    color: #b1841d;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN VER PRODUCTO */
+
+.inicio-productos-grid .boton-detalles {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    background: #090909;
+    color: #e4bb4b;
+    border: 1px solid #c99b2c;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inicio-productos-grid .boton-detalles:hover {
+    background: #d6a52c;
+    color: #080808;
+}
+
+/* CARGANDO */
+
+.inicio-cargando {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 35px;
+    color: #777;
+}
+
+/* VER TODOS LOS PRODUCTOS */
+
+.inicio-ver-todos {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.inicio-boton-secundario {
+    display: inline-block;
+    background: #080808;
+    color: #e3ba48;
+    border: 1px solid #c99b2c;
+    padding: 13px 23px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.inicio-boton-secundario:hover {
+    background: #d6a52c;
+    color: #080808;
+}
+
+/* VIDEO */
+
+.inicio-multimedia {
+    background: #fff;
+    padding: 65px 7%;
+}
+
+.inicio-video-contenedor {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #080808;
+    border: 2px solid #c99b2c;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.inicio-video-contenedor::before {
+    content: "BARBER SHOP STORE";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    background: rgba(0,0,0,.8);
+    color: #e3ba48;
+    padding: 9px 14px;
+    border: 1px solid #c99b2c;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.inicio-video-contenedor video {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    background: #080808;
+    object-fit: contain;
+}
+
+/* AUDIO */
+
+.inicio-audio {
+    background: #101010;
+    padding: 35px 7%;
+    border-top: 1px solid #c99b2c;
+    border-bottom: 1px solid #c99b2c;
+}
+
+.inicio-audio-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.inicio-audio-icono {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #d6a52c;
+    color: #080808;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.inicio-audio-contenido h2 {
+    color: #e3ba48;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.inicio-audio-contenido p {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.inicio-audio-contenido audio {
+    width: 320px;
+    max-width: 100%;
+}
+
+/* PROMOCIÓN */
+
+.inicio-promocion {
+    background: linear-gradient(110deg, #101010, #302512);
+    color: white;
+    padding: 42px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border-top: 1px solid #c99b2c;
+    border-bottom: 1px solid #c99b2c;
+}
+
+.inicio-promocion span {
+    color: #d6a52c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.inicio-promocion h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.inicio-promocion p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+/* PIE DE PÁGINA - GRID AREAS */
+
+.inicio-footer {
+    background: #050505;
+    color: #ccc;
+    padding: 45px 7% 0;
+}
+
+.inicio-footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "marca enlaces categorias contacto";
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+.inicio-footer-grid > div:nth-child(1) {
+    grid-area: marca;
+}
+
+.inicio-footer-grid > div:nth-child(2) {
+    grid-area: enlaces;
+}
+
+.inicio-footer-grid > div:nth-child(3) {
+    grid-area: categorias;
+}
+
+.inicio-footer-grid > div:nth-child(4) {
+    grid-area: contacto;
+}
+
+.inicio-footer h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.inicio-footer h2 strong,
+.inicio-footer h3 {
+    color: #d6a52c;
+}
+
+.inicio-footer h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.inicio-footer p,
+.inicio-footer a {
+    color: #bbb;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.inicio-footer a {
+    display: block;
+    text-decoration: none;
+}
+
+.inicio-footer a:hover {
+    color: #d6a52c;
+}
+
+/* REDES SOCIALES */
+
+.inicio-footer .inicio-redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.inicio-footer .inicio-redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #c99b2c;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.inicio-footer .inicio-redes-sociales a img {
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+.inicio-footer .inicio-redes-sociales a:hover {
+    background: #d6a52c;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(201,155,44,.3);
+}
+
+.inicio-footer .inicio-redes-sociales a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.inicio-footer-final {
+    text-align: center;
+    border-top: 1px solid #9a741d;
+    padding: 18px 10px;
+    font-size: 11px;
+}
+
+/* WHATSAPP FIJO */
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 2000;
+    background: #159b52;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+.whatsapp-flotante:hover {
+    background: #08783d;
+    transform: translateY(-4px);
+}
+
+/* TABLETS */
+
+@media (max-width: 950px) {
+
+    .inicio-beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio-productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .inicio-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "marca enlaces"
+            "categorias contacto";
+    }
+}
+
+/* CELULARES Y TABLETS PEQUEÑAS */
+
+@media (max-width: 700px) {
+
+    .inicio-topbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inicio-header {
+        justify-content: center;
+    }
+
+    .inicio-menu {
+        justify-content: center;
+    }
+
+    .inicio-hero {
+        min-height: 370px;
+        padding: 45px 7%;
+    }
+
+    .inicio-beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inicio-categorias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio-productos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .inicio-promocion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inicio-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "marca enlaces"
+            "categorias contacto";
+    }
+
+    .inicio-multimedia {
+        padding: 45px 5%;
+    }
+
+    .inicio-video-contenedor video {
+        max-height: 350px;
+    }
+
+    .inicio-audio-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-audio-contenido audio {
+        width: 100%;
+    }
+
+    .whatsapp-flotante {
+        right: 15px;
+        bottom: 15px;
+        padding: 13px 17px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+
+    .inicio-topbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .inicio-menu {
+        gap: 13px;
+    }
+
+    .inicio-beneficios,
+    .inicio-categorias-grid,
+    .inicio-productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio-footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "marca"
+            "enlaces"
+            "categorias"
+            "contacto";
+    }
+
+    .inicio-categorias,
+    .inicio-destacados {
+        padding: 40px 5%;
+    }
+
+    .inicio-hero {
+        padding: 45px 7%;
+    }
+
+    .inicio-confianza {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio-video-contenedor::before {
+        top: 10px;
+        left: 10px;
+        font-size: 9px;
+        padding: 7px 10px;
+    }
+
+    .inicio-audio {
+        padding: 30px 5%;
+    }
+
+    .inicio-video-contenedor video {
+        max-height: 260px;
+    }
+}

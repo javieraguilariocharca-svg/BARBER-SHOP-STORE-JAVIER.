@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Barber Shop Store</title>
+
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <span> DISPONIBILIDAD</span>
+            <span> COMPRA SEGURA</span>
+            <span> ATENCION AL CLIENTE</span>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✂</span>
+
+            <span>
+                BARBER SHOP <strong>STORE</strong>
+                <small>Estilo, calidad y profesionalismo</small>
+            </span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="carrito.html" id="contador-carrito">Mi compra (0)</a>
+        </nav>
+
+    </header>
+
+    <!-- PORTADA -->
+    <section class="banner-contacto">
+
+        <div>
+            <h1>CONTÁCTANOS <strong>HOY</strong></h1>
+
+            <p>
+                Estamos aquí para ayudarte a encontrar lo que necesitas.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-contacto">
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <section class="informacion">
+
+            <h2>Información de contacto</h2>
+
+            <p>
+                ¿Tienes alguna consulta sobre nuestros productos?
+                Comunícate con nosotros.
+            </p>
+
+            <div class="dato">
+                <h3> Teléfono / WhatsApp</h3>
+                <p>71851247</p>
+
+                <a
+                    href="https://wa.me/59171851247"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Escribir por WhatsApp
+                </a>
+            </div>
+
+            <div class="dato">
+                <h3> Correo electrónico</h3>
+                <p>javieraguilariocharc@gmil.com</p>
+
+                <a href="mailto:javieraguilariocharc@gmil.com">
+                    Enviar correo
+                </a>
+            </div>
+
+            <div class="dato">
+                <h3> Dirección</h3>
+                <p>Av. 6 de Agosto, Oruro, Bolivia</p>
+            </div>
+
+            <div class="dato">
+                <h3> Horario de atención</h3>
+                <p>Lunes a sábado</p>
+                <p>08:00 a 18:00</p>
+            </div>
+
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="formulario">
+
+            <h2>Envíanos un mensaje</h2>
+
+            <form id="formulario-contacto">
+
+                <label for="nombre">Nombre completo</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="correo">Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Escribe tu correo"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="celular">Número de celular</label>
+
+                <input
+                    type="tel"
+                    id="celular"
+                    placeholder="Ejemplo: 71851247"
+                    inputmode="numeric"
+                    minlength="8"
+                    maxlength="8"
+                    pattern="[0-9]{8}"
+                    autocomplete="tel"
+                    required
+                >
+
+                <label for="asunto">Asunto</label>
+
+                <input
+                    type="text"
+                    id="asunto"
+                    placeholder="Motivo de tu consulta"
+                    required
+                >
+
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+            <p id="respuesta" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <!-- UBICACIÓN -->
+    <section class="ubicacion">
+
+        <h2>NUESTRA UBICACIÓN</h2>
+
+        <p>
+            Visítanos en la Av. 6 de Agosto, Oruro, Bolivia.
+        </p>
+
+        <iframe
+            src="https://www.google.com/maps?q=Av.%206%20de%20Agosto,%20Oruro,%20Bolivia&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Av.%206%20de%20Agosto%2C%20Oruro%2C%20Bolivia"
+            target="_blank"
+            rel="noopener noreferrer">
+            Ver ubicación en Google Maps
+        </a>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <h2>BARBER SHOP STORE</h2>
+
+        <p>Calidad, estilo y herramientas para profesionales.</p>
+
+        <p>© 2026 Barber Shop Store. Todos los derechos reservados.</p>
+
+    </footer>
+
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="app/contacto.js"></script>
+    <script src="app/contador-carrito.js"></script>
+
+</body>
+</html>

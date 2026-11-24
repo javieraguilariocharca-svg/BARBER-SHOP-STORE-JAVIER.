@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito de Compras | BARBER SHOP STORE</title>
+
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <span>DISPONIBILIDAD</span>
+        <span>COMPRA SEGURA</span>
+        <span>ATENCION AL CLIENTE</span>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✂</span>
+
+            <span>
+                BARBER SHOP <strong>STORE</strong>
+                <small>Estilo, calidad y profesionalismo</small>
+            </span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="carrito.html" id="contador-carrito" class="activo">Mi compra (0)</a>
+        </nav>
+
+    </header>
+
+    <!-- PORTADA DEL CARRITO -->
+    <section class="banner-carrito">
+
+        <div>
+            <h1>MI <strong>SELECCIÓN</strong></h1>
+
+            <p>
+                Tus productos elegidos para llevar tu barbería al siguiente nivel.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-carrito">
+
+        <!-- PRODUCTOS SELECCIONADOS -->
+        <section class="seccion-productos">
+
+            <h2>Productos seleccionados</h2>
+
+            <div id="lista-carrito">
+
+                <div class="carrito-vacio">
+                    <p>Tu carrito está vacío.</p>
+
+                    <a href="productos.html" class="btn-comprar">
+                        Ver productos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RESUMEN Y MENSAJE DE COMPRA -->
+        <div class="resumen-con-mensaje">
+
+            <!-- RESUMEN DE COMPRA -->
+            <aside class="resumen-compra">
+
+                <h2>Resumen de compra</h2>
+
+                <div class="linea-resumen">
+                    <span>Subtotal:</span>
+                    <strong id="subtotal">Bs. 0</strong>
+                </div>
+
+                <div class="linea-resumen">
+                    <span>Envío:</span>
+                    <strong id="envio">Por calcular</strong>
+                </div>
+
+                <div class="linea-total">
+                    <span>Total:</span>
+                    <strong id="total">Bs. 0</strong>
+                </div>
+
+                <button
+                    id="btn-finalizar"
+                    class="btn-finalizar"
+                    type="button">
+                    Finalizar compra
+                </button>
+
+                <!-- CONFIRMACION DE COMPRA -->
+                <div id="confirmacion-compra" class="confirmacion-compra" hidden>
+
+                    <p>¿Estás seguro de que deseas confirmar tu compra?</p>
+
+                    <div class="botones-confirmacion">
+
+                        <button
+                            id="btn-confirmar"
+                            class="btn-confirmar"
+                            type="button">
+                            Confirmar compra
+                        </button>
+
+                        <button
+                            id="btn-cancelar"
+                            class="btn-cancelar"
+                            type="button">
+                            Cancelar
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <a href="productos.html" class="seguir-comprando">
+                    Seguir comprando
+                </a>
+
+            </aside>
+
+            <!-- MENSAJE FLOTANTE DE COMPRA EXITOSA -->
+            <div id="mensaje-exito" class="mensaje-exito" hidden>
+                ✓ ¡Su compra fue exitosa!
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="footer-final">
+            <p>© 2026 BARBER SHOP STORE. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a
+        href="https://wa.me/59171851247"
+        class="whatsapp-flotante"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        title="Contáctanos por WhatsApp">
+        WhatsApp
+    </a>
+
+    <!-- ARCHIVOS JAVASCRIPT -->
+    <script src="app/carrito.js"></script>
+    <script src="app/contador-carrito.js"></script>
+
+</body>
+
+</html>

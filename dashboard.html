@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Barber Shop Store</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="topbar">
+        <span> DISPONIBILIDAD</span>
+            <span> COMPRA SEGURA</span>
+            <span> ATENCION AL CLIENTE</span>
+    </div>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✂</span>
+            <span>
+                BARBER SHOP <strong>STORE</strong>
+                <small>Estilo, calidad y profesionalismo</small>
+            </span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="dashboard.html" class="activo">Dashboard</a>
+            <a href="carrito.html" id="contador-carrito">Mi compra (0)</a>
+        </nav>
+
+    </header>
+
+    <main class="dashboard">
+
+        <!-- TÍTULO -->
+        <section class="titulo-dashboard">
+
+            <span>PANEL DE ADMINISTRACIÓN</span>
+
+            <h1>CONTROL DE <strong>INVENTARIO</strong></h1>
+
+            <p>
+                Administra y consulta la información de los productos de tu tienda.
+            </p>
+
+            <p class="fecha-actualizacion">
+                Última actualización:
+                <strong id="fecha-actualizacion">Cargando...</strong>
+            </p>
+
+        </section>
+
+        <!-- INDICADORES -->
+        <section class="resumen-dashboard">
+
+            <!-- TOTAL DE PRODUCTOS -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-productos.jpg"
+                    alt="Productos y herramientas de barbería"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Total de productos</p>
+                    <h2 id="total-productos">0</h2>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTOS DISPONIBLES -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-disponibles.jpg"
+                    alt="Productos disponibles para la venta"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Productos disponibles</p>
+                    <h2 id="productos-disponibles">0</h2>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTOS AGOTADOS -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-agotados.jpg"
+                    alt="Productos agotados"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Productos agotados</p>
+                    <h2 id="productos-agotados">0</h2>
+                </div>
+
+            </div>
+
+            <!-- PRODUCTOS CON POCO STOCK -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-bajo-stock.jpg"
+                    alt="Productos con pocas existencias"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Productos con poco stock</p>
+                    <h2 id="productos-bajo-stock">0</h2>
+                </div>
+
+            </div>
+
+            <!-- VALOR DEL INVENTARIO -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-inventario.jpg"
+                    alt="Control del valor del inventario"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Valor del inventario</p>
+                    <h2 id="valor-inventario">Bs. 0</h2>
+                </div>
+
+            </div>
+
+            <!-- CATEGORÍAS -->
+            <div class="tarjeta-resumen">
+
+                <img
+                    src="img/dashboard-categorias.jpg"
+                    alt="Categorías de herramientas de barbería"
+                    class="imagen-resumen"
+                >
+
+                <div>
+                    <p>Categorías registradas</p>
+                    <h2 id="total-categorias">0</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- GRÁFICOS -->
+        <section class="graficos-dashboard">
+
+            <!-- GRÁFICO DE CATEGORÍAS -->
+            <div class="grafico-tarjeta">
+
+                <div class="titulo-seccion">
+                    <span>ANÁLISIS DE INVENTARIO</span>
+                    <h2>Productos por categoría</h2>
+                </div>
+
+                <div id="grafico-categorias" class="grafico-barras">
+                    <p>Cargando gráfico...</p>
+                </div>
+
+            </div>
+
+            <!-- GRÁFICO DE STOCK -->
+            <div class="grafico-tarjeta">
+
+                <div class="titulo-seccion">
+                    <span>ESTADO DEL INVENTARIO</span>
+                    <h2>Distribución del stock</h2>
+                </div>
+
+                <div class="grafico-stock">
+
+                    <div id="grafico-stock" class="grafico-circular">
+                        <span id="total-stock-grafico">0</span>
+                    </div>
+
+                    <div id="leyenda-stock" class="leyenda-stock"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTOS CON POCO STOCK -->
+        <section class="tabla-dashboard">
+
+            <div class="encabezado-tabla">
+
+                <div>
+                    <span>CONTROL DE EXISTENCIAS</span>
+                    <h2>Productos con poco stock</h2>
+                    <p>
+                        Productos que necesitan reposición (5 unidades o menos).
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Stock actual</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-bajo-stock">
+
+                        <tr>
+                            <td colspan="4">Cargando productos...</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- INVENTARIO GENERAL -->
+        <section class="tabla-dashboard">
+
+            <div class="encabezado-tabla">
+
+                <div>
+                    <span>GESTIÓN DE TIENDA</span>
+                    <h2>Inventario de productos</h2>
+                </div>
+
+                <input
+                    type="text"
+                    id="buscar-producto"
+                    placeholder="Buscar producto..."
+                >
+
+            </div>
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabla-productos">
+
+                        <tr>
+                            <td colspan="5">Cargando productos...</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <h2>BARBER SHOP <strong>STORE</strong></h2>
+
+        <p>Calidad, estilo y herramientas para profesionales.</p>
+
+        <div class="footer-final">
+            © 2026 Barber Shop Store. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/59171851247"
+        class="whatsapp-flotante"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        title="Contáctanos por WhatsApp"
+    >
+        WhatsApp
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="app/dashboard.js"></script>
+    <script src="app/contador-carrito.js"></script>
+
+</body>
+
+</html>
